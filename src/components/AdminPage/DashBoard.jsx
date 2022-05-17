@@ -5,15 +5,24 @@ import {
   DownOutlined,
 } from "@ant-design/icons";
 
-import { Button, Col, Dropdown, Layout, Menu, Select, Space, Typography } from "antd";
-import "../styles/DashBoard.css"
+import {
+  Button,
+  Col,
+  Dropdown,
+  Layout,
+  Menu,
+  Select,
+  Space,
+  Typography,
+} from "antd";
+import "../styles/DashBoard.css";
 
 import "antd/dist/antd.css";
 import React from "react";
 import AdminContent from "./AdminContent";
+import AddCategory from "./AddCategory";
 const { Header, Content, Footer, Sider } = Layout;
 const { Option } = Select;
-
 
 function getItem(label, key, icon, children, type) {
   return {
@@ -46,8 +55,6 @@ const items = [
   ]),
 ];
 
-
-
 function DashBoard(props) {
   return (
     <Layout>
@@ -73,46 +80,15 @@ function DashBoard(props) {
           />
         </Sider>
         <Layout style={{ padding: "0 24px 24px" }}>
-          <Col style={{ marginTop:'16px' }} >
-            <Select style={{ width: 200 }} className='select' defaultValue={'Hành Động'} placeholder={'Hành Động'} >
-              <Option>Option 1</Option>
-              <Option>Option 1</Option>
-              <Option>Option 1</Option>
-            </Select>
-            <Button className="button">Áp Dụng</Button>
-            <Select style={{ width: 160 }} className='select' defaultValue={'Tất Cả Các Ngày'} placeholder={'Tất Cả Các Ngày'}>
-              <Option>Option 1</Option>
-              <Option>Option 1</Option>
-              <Option>Option 1</Option>
-            </Select>
-            <Select style={{ width: 200 }} className='select' placeholder={'Lọc Theo Tài Khoản Khách Hàng'}>
-              <Option>Option 1</Option>
-              <Option>Option 1</Option>
-              <Option>Option 1</Option>
-            </Select>
-            <Button className="button">Lọc</Button>
-          </Col>
           <Content
             className="site-layout-background"
             style={{
-          
-              margin: '12px 0',
-              backgroundColor:'#fff',
-
+              margin: "12px 0",
               minHeight: 280,
             }}
           >
-            <AdminContent />
+            <AddCategory />
           </Content>
-          <Col>
-            <Select style={{ width: 200 }} className='select'  defaultValue={'Bỏ Vào Thùng Rác'} placeholder={'Bỏ Vào Thùng Rác'}>
-              <Option>Option 1</Option>
-              <Option>Option 1</Option>
-              <Option>Option 1</Option>
-            </Select>
-           
-            <Button className="button">Lọc</Button>
-          </Col>
         </Layout>
       </Layout>
     </Layout>
