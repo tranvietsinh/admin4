@@ -18,47 +18,41 @@ function AddCategory(props) {
         <Col className="content__left">
           <Typography className="content__header">Tên Danh Mục</Typography>
           <Typography
-            style={{
-              height: "160px",
-              backgroundColor: "#ccc",
-              paddingLeft: "8px",
-            }}
-          >
-            Thùng Hàng 1
+            className="content__body">
+            Danh mục 1
           </Typography>
-          <Typography style={{ height: "160px", paddingLeft: "8px", backgroundColor:'#ece5e5' }}>
-            Thùng Hàng 1
+          <Typography className="content__body-1"> 
+          Danh mục 2
           </Typography>
           <Typography
-            style={{
-              height: "160px",
-              backgroundColor: "#ccc",
-              paddingLeft: "8px",
-            }}
-          >
-            Thùng Hàng 1
+            className="content__body">
+             Danh mục 3
           </Typography>
-          <Typography style={{ height: "160px", paddingLeft: "8px", backgroundColor:'#ece5e5' }}>
-            Thùng Hàng 1
-          </Typography>
-          <Typography
-            style={{
-              height: "160px",
-              backgroundColor: "#ccc",
-              paddingLeft: "8px",
-            }}
-          >
-            Thùng Hàng 1
+          <Typography className="content__body-1"> 
+          Danh mục 4
           </Typography>
         </Col>
         <Col className="content__right">
           <Typography className="content__header">Chức Năng</Typography>
+          <Col className="content__body"
+          >
+            <Button style={{backgroundColor: 'rgb(65 185 175)', color:'#fff'}} >
+              <AiFillDelete />
+            </Button>
+            <Button style={{backgroundColor: 'rgb(65 185 175)', color:'#fff'}}>
+              <AiFillFileAdd />
+            </Button>
+          </Col >
+          <Col className="content__body-1">
+            <Button style={{backgroundColor: 'rgb(65 185 175)', color:'#fff'}}>
+              <AiFillDelete />
+            </Button>
+            <Button style={{backgroundColor: 'rgb(65 185 175)', color:'#fff'}}>
+              <AiFillFileAdd />
+            </Button>
+          </Col>
           <Col
-            style={{
-              height: "160px",
-              backgroundColor: "#ccc",
-              paddingLeft: "8px",
-            }}
+           className="content__body"
           >
             <Button style={{backgroundColor: 'rgb(65 185 175)', color:'#fff'}} >
               <AiFillDelete />
@@ -67,7 +61,7 @@ function AddCategory(props) {
               <AiFillFileAdd />
             </Button>
           </Col>
-          <Col style={{ height: "160px", paddingLeft: "8px", backgroundColor:'#ece5e5'}}>
+          <Col className="content__body-1">
             <Button style={{backgroundColor: 'rgb(65 185 175)', color:'#fff'}}>
               <AiFillDelete />
             </Button>
@@ -76,33 +70,7 @@ function AddCategory(props) {
             </Button>
           </Col>
           <Col
-            style={{
-              height: "160px",
-              backgroundColor: "#ccc",
-              paddingLeft: "8px",
-            }}
-          >
-            <Button style={{backgroundColor: 'rgb(65 185 175)', color:'#fff'}} >
-              <AiFillDelete />
-            </Button>
-            <Button style={{backgroundColor: 'rgb(65 185 175)', color:'#fff'}}>
-              <AiFillFileAdd />
-            </Button>
-          </Col>
-          <Col style={{ height: "160px", paddingLeft: "8px", backgroundColor:'#ece5e5'}}>
-            <Button style={{backgroundColor: 'rgb(65 185 175)', color:'#fff'}}>
-              <AiFillDelete />
-            </Button>
-            <Button style={{backgroundColor: 'rgb(65 185 175)', color:'#fff'}}>
-              <AiFillFileAdd />
-            </Button>
-          </Col>
-          <Col
-            style={{
-              height: "160px",
-              backgroundColor: "#ccc",
-              paddingLeft: "8px",
-            }}
+            className="content__body"
           >
             <Button style={{backgroundColor: 'rgb(65 185 175)', color:'#fff'}} >
               <AiFillDelete />

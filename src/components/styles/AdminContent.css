@@ -48,24 +48,34 @@
 .button__category{
     display: flex;
     align-items: center;
-    color: #fff !important;
-    background-color: #096dd9;
+    /* color: #fff !important;
+    background-color: #096dd9; */
 }
 
 .content__left{
+    margin-left: 180px ;
     background: #fff;
     margin-right: 32px;
     width: 50%;
 }
 .content__right{
     background: #fff;
-    width: 30%;
+    width: 15%;
 }
 .content__header{
     text-transform: uppercase;
     padding: 4px 8px;
-    background: #d7d3d3;
+    background: #dce2ef;
     color: black;
     font-weight: 700;
     font-size: 16px;
 }
+.content__body { 
+    height: 100px;
+     padding-left: 8px;
+     background-color: #ffff; }
+
+.content__body-1 { 
+    height: 100px;
+     padding-left: 8px;
+     background-color: #dce2ef }
